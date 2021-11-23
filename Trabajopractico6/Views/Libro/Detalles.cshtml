@@ -1,0 +1,90 @@
+﻿@model Trabajopractico6.Models.InfoLibro
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalles</title>
+</head>
+<body>
+    <div>
+        <h4>InfoLibro</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Autor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Autor)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ISBN)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ISBN)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Paginas)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Paginas)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Edicion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Edicion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Editorial)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Editorial)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Lugar)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Lugar)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Fecha_edicion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Fecha_edicion)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Editar", new { id = Model.Id }) |
+        @Html.ActionLink("Regresar", "Index")
+    </p>
+</body>
+</html>
